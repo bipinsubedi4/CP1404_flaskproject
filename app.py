@@ -9,6 +9,11 @@ def hello_world():
     # Return a string to display on the webpage
     return f"<h1>Hello World:)</h1>"
 
+@app.route('/greet')
+@app.route('/greet/<name>')
+def greet(name=""):
+    return f"<h1>Hello {name}!</h1>"
+
 # Run the Flask app
 if __name__ == '__main__':
     app.run()
