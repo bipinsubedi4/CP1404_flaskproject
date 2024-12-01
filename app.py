@@ -7,7 +7,7 @@ app = Flask(__name__)
 @app.route('/')
 def hello_world():
     # Return a string to display on the webpage
-    return 'Hello World!'
+    return f"<h1>Hello World:)</h1>"
 
 # Run the Flask app
 if __name__ == '__main__':
